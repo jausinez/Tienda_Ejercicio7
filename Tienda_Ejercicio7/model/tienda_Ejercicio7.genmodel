@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Tienda_Ejercicio7/src" modelPluginID="Tienda_Ejercicio7"
+    modelName="Tienda_Ejercicio7" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>tienda_Ejercicio7.ecore</foreignModel>
+  <genPackages prefix="Tienda_Ejercicio7" disposableProviderFactory="true" ecorePackage="tienda_Ejercicio7.ecore#/">
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Tienda">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/idTienda"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/calle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/ciudad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/codPostal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/telefono"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/fax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Tienda/tipo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Tienda/empleado"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Tienda/insTienda"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Tienda/modTienda"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Tienda/remTienda"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Tienda/visTienda"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Empleado">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/idEmpleado"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/apellidoUno"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/apellidoDos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/cargo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Empleado/tienda_asignada"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Empleado/tienda"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Empleado/producto"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Empleado/venta"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Empleado/insEmple"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Empleado/modEmple"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Empleado/remEmple"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Empleado/visEmple"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Producto">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Producto/idProducto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Producto/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Producto/precio"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Producto/descripcion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Producto/idTipo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Producto/empleado"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Producto/insProd"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Producto/modProd"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Producto/remProd"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Producto/visProd"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Venta">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Venta/idVenta"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Venta/hora"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Venta/fecha"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Venta/empleado"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Venta/cliente"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Venta/insVenta"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Venta/modVenta"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Venta/remVenta"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Venta/visVenta"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Cliente">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Cliente/idCliente"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Cliente/dni"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Cliente/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Cliente/correoElectronico"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tienda_Ejercicio7.ecore#//Cliente/venta"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Cliente/insCliente"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Cliente/modCliente"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Cliente/remCliente"/>
+      <genOperations ecoreOperation="tienda_Ejercicio7.ecore#//Cliente/visCliente"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Lacteo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Lacteo/proteinas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Lacteo/lactosa"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Lacteo/animal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Lacteo/pH"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Fruta">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Fruta/glucidos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Fruta/fibra"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Fruta/vitaminas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Fruta/sales_minerales"/>
+    </genClasses>
+    <genClasses ecoreClass="tienda_Ejercicio7.ecore#//Postre">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Postre/calorias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Postre/hidratosDeCarbono"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Postre/azucares"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tienda_Ejercicio7.ecore#//Postre/epocaDeConsumo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
